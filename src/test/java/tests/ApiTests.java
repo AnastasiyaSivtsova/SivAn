@@ -1,11 +1,10 @@
 package tests;
 
 import Helper.DataUser;
-import okhttp3.Response;
+import com.jayway.restassured.response.Response;
 import org.junit.Test;
 import org.testng.asserts.SoftAssert;
 
-import static com.jayway.restassured.RestAssured.get;
 import static com.jayway.restassured.RestAssured.given;
 
 public class ApiTests {
@@ -33,7 +32,7 @@ public class ApiTests {
                 .header(CONTENT_TYPE,HEADER_APP_JSON)
                 .and().statusCode(200);
     }
-/*
+
     @Test
     public void verifyHTTPResponseBody() {
         response = given()
@@ -51,7 +50,7 @@ public class ApiTests {
         softAssert.assertEquals(response.statusCode(), 201);
         softAssert.assertNotNull(response.body());
         softAssert.assertAll();
-        System.out.println("id: " + response.body().jsonPath.getInt("id"));
+        System.out.println("id: " + response.body().jsonPath().getInt("id"));
     }
 
     @Test
@@ -76,7 +75,5 @@ public class ApiTests {
         softAssert.assertAll();
         response.body().print();
     }
-    */
-
 }
 
