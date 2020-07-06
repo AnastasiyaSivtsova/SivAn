@@ -1,5 +1,5 @@
 package pages;
-
+ 
 import net.thucydides.core.annotations.DefaultUrl;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 public class MainPage extends BasePage {
 
     //// Локаторы:
-
+ 
     // Аннтоация:
     // указываем локатор
     // в данном случае сss
@@ -28,82 +28,82 @@ public class MainPage extends BasePage {
 
     @FindBy(id = "email")
     private WebElement emailField;
-
+ 
     @FindBy(id = "passwd")
     private WebElement passwordField;
-
+ 
     @FindBy(xpath = "//*[@id='create-account_form']/div/p")
     private WebElement createAccountText;
-
+ 
     @FindBy(xpath = "//p[@class='info-account']")
     private WebElement welcomeText;
-
+ 
     @FindBy(xpath = "//div[@class='alert alert-danger']/p")
     private WebElement errorText;
 
     @FindBy(xpath = "//div[@class='alert alert-danger']/ol/li")
     private WebElement authenticationErrorText;
-
+ 
     @FindBy(xpath = "//div[@class='alert alert-danger']/p")
     private WebElement errorEmailText;
-
+ 
     @FindBy(xpath = "//div[@class='alert alert-danger']/ol/li")
     private WebElement errorLoginText;
-
+ 
     @FindBy(id = "SubmitLogin")
     private WebElement signInButtonOnLoginPage;
-
+ 
     @FindBy(css = "a[title='Women']")
     private WebElement womenTab;
-
+ 
     @FindBy(css = "a[style='background:#F39C11;']")
     private WebElement orangeBox;
-
+ 
     @FindBy(css = "ul[class='color_to_pick_list clearfix']")
     private List<WebElement> colorBoxes;
-
+ 
     @FindBy(xpath = "(//a[@title='Printed Summer Dress'])[2]")
     private WebElement printedSummerDressLink;
-
+ 
     @FindBy(name = "Submit")
     private WebElement addToCartButton;
-
+ 
     @FindBy(xpath = "//span[@class='continue btn btn-default button exclusive-medium']")
     private WebElement continueShoppingButton;
-
+ 
     @FindBy(xpath = "//a[@href='http://automationpractice.com/index.php?controller=order']")
     private WebElement cartTab;
-
+ 
     @FindBy(xpath = "//img[@src='http://automationpractice.com/img/logo.jpg']")
     private WebElement logoLink;
-
+ 
     @FindBy(xpath = "(//a[@title='Proceed to checkout'])[2]")
     private WebElement proceedToCheckoutButton;
-
+ 
     @FindBy(name = "processAddress")
     private WebElement addressProceedToCheckoutButton;
-
+ 
     @FindBy(xpath = "//label[text()='I agree to the terms of service and will adhere to them unconditionally.']")
     private WebElement termsOfServiceCheckbox;
-
+ 
     @FindBy(name = "processCarrier")
     private WebElement shippingProceedToCheckoutButton;
-
+ 
     @FindBy(xpath = "//a[@class='cheque']")
     private WebElement payByCheckButton;
-
+ 
     @FindBy(xpath = "(//button[@type='submit'])[2]")
     private WebElement confirmMyOrderButton;
-
+ 
     @FindBy(xpath = "//p[@class='alert alert-success']")
     private WebElement confirmationMassage;
-
+ 
     @FindBy(xpath = "//*[@id='center_column']/ul/li")
     private List<WebElement> moveToItem;
-
+ 
     @FindBy(css = "a[title='Add to cart'][data-id-product]")
     private List<WebElement> addToCartButtons;
-
+ 
     @FindBy(xpath = "//*[@id='layer_cart']/div[1]/div[2]/div[4]/span/span")
     private WebElement contShoppingButton;
 
